@@ -18,7 +18,7 @@
 	rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
-	<script
+<script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 	crossorigin="anonymous"></script>
@@ -74,7 +74,7 @@
 			emailE.innerHTML = ""
 			sbtn.disabled = false;
 		}
-		
+
 		if (phno == "" || phno == null) {
 			phnoE.innerHTML = "Phone Number should not be blank"
 			sbtn.disabled = true;
@@ -86,7 +86,7 @@
 		} else {
 			phnoE.innerHTML = ""
 			sbtn.disabled = false;
-			return false;
+			
 
 		}
 
@@ -112,8 +112,6 @@
 			sbtn.disabled = false;
 		}
 
-		
-
 	}
 </script>
 
@@ -126,50 +124,54 @@
 				<div style="text-align: center; background-color: #B284BE;">
 					<h1>JSP form</h1>
 				</div>
-				
+
 				<span class="text-success"></span>
 				<form action="data.jsp" method="post">
-				
-				<div class="form-group mb-3">
-					<label class="form-label">First Name</label>
-					<input type="text" name="fname" id="fname" class="form-control" onkeyup="validation()">
-					<span id="fnameE" class="text-danger"></span>
-				</div>
-				
-				<div class="form-group mb-3">
-					<label class="form-label">Last Name</label>
-					<input type="text" name="lname" id="lname" class="form-control" onkeyup="validation()">
-					<span id="lnameE" class="text-danger"></span>
-				</div>
-				
-				<div class="form-group mb-3">
-					<label class="form-label">Email</label>
-					<input type="text" name="email" id="email" class="form-control" onkeyup="validation()">
-					<span id="emailE" class="text-danger"></span>
-				</div>
-				
-				<div class="form-group mb-3">
-					<label class="form-label">Mobile</label>
-					<input type="text" name="phno" id="phno" class="form-control" onkeyup="validation()">
-					<span id="phnoE" class="text-danger"></span>
-				</div>
-				
-				<div class="form-group mb-3">
-					<label class="form-label">Password</label>
-					<input type="password" name="pass" id="pass" class="form-control" onkeyup="validation()">
-					<span id="passE" class="text-danger"></span>
-				</div>
-				
-				<div class="form-group mb-3">
-					<label class="form-label">Conform Password</label>
-					<input type="password" name="cpass" id="cpass" class="form-control" onkeyup="validation()">
-					<span id="cpassE" class="text-danger"></span>
-				</div>
-				
-				<button type="submit" class="btn btn-primary btn-lg" id="sbtn">Submit</button>
-				<button type="reset" class="btn btn-success btn-lg" id="rbtn">Reset</button> 
+
+					<div class="form-group mb-3">
+						<label class="form-label">First Name</label> <input type="text"
+							name="fname" id="fname" class="form-control"
+							onkeyup="validation()"> <span id="fnameE"
+							class="text-danger"></span>
+					</div>
+
+					<div class="form-group mb-3">
+						<label class="form-label">Last Name</label> <input type="text"
+							name="lname" id="lname" class="form-control"
+							onkeyup="validation()"> <span id="lnameE"
+							class="text-danger"></span>
+					</div>
+
+					<div class="form-group mb-3">
+						<label class="form-label">Email</label> <input type="text"
+							name="email" id="email" class="form-control"
+							onkeyup="validation()"> <span id="emailE"
+							class="text-danger"></span>
+					</div>
+
+					<div class="form-group mb-3">
+						<label class="form-label">Mobile</label> <input type="text"
+							name="phno" id="phno" class="form-control" onkeyup="validation()">
+						<span id="phnoE" class="text-danger"></span>
+					</div>
+
+					<div class="form-group mb-3">
+						<label class="form-label">Password</label> <input type="password"
+							name="pass" id="pass" class="form-control" onkeyup="validation()">
+						<span id="passE" class="text-danger"></span>
+					</div>
+
+					<div class="form-group mb-3">
+						<label class="form-label">Conform Password</label> <input
+							type="password" name="cpass" id="cpass" class="form-control"
+							onkeyup="validation()"> <span id="cpassE"
+							class="text-danger"></span>
+					</div>
+
+					<button type="submit" class="btn btn-primary btn-lg" id="sbtn">Submit</button>
+					<button type="reset" class="btn btn-success btn-lg" id="rbtn">Reset</button>
 				</form>
-			
+
 			</div>
 		</div>
 	</div>
