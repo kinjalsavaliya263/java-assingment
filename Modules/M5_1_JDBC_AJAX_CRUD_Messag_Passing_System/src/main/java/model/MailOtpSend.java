@@ -24,7 +24,7 @@ public class MailOtpSend {
 		// get Session
 		Session session = Session.getDefaultInstance(props, new javax.mail.Authenticator() {
 			protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication("kinjalsavaliya263@gmail.com", " ldkiilktncakbhtd");
+				return new PasswordAuthentication("kinjalsavaliya263@gmail.com", " sijqhlfrecdbzegm");
 			}
 		});
 		// compose message
